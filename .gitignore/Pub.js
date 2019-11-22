@@ -7,7 +7,6 @@ client.login(process.env.TOKEN)
 client.on('message', message => { 
     let args = message.content.trim().split(/ +/g)
     if (args[0].toLocaleLowerCase() === prefix + 'dm') {
-        if (message.author.id != "289530805137571840" || message.author.id != "596843052367216647" || message.author.id != "308753279951700008" || message.author.id != "390502461443670019" || message.author.id != "286628999298547712") return message.channel.send("Tu n'as pas les permission!")
         if (message.guild) 
             message.guild.members.forEach(member => { if (member.id != client.user.id && !member.user.bot) member.send(`Je t'invite à rejoindre le serveur Le Royaume :crown: qui possède beaucoup d'avantages, notamment :
     
