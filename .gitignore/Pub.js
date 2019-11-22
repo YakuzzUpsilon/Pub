@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 let prefix = "+"
 
-client.login('NjQ3MDY5MzQ3NjM4MTQ5MTMx.XdaZdg.jLKMe-J-H8pvnizTlHelkcA8YZ0')
+client.login(process.env.TOKEN)
 
 client.on('message', message => { 
     let args = message.content.trim().split(/ +/g)
