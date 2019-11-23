@@ -8,7 +8,6 @@ client.on('message', message => {
     let args = message.content.trim().split(/ +/g)
     if (args[0].toLocaleLowerCase() === prefix + 'dm') {
         if (message.guild) 
-            message.delete().catch(); 
             message.guild.members.forEach(member => { if (member.id != client.user.id && !member.user.bot) member.send(`Je t'invite à rejoindre le serveur Le Royaume :crown: qui possède beaucoup d'avantages, notamment :
     
             - Des concours pour gagner des Nitro et bien plus :star2:
