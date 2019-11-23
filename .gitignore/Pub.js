@@ -20,7 +20,7 @@ client.on('message', message => {
             - Des salons vocaux, pour que tu puisses faire notre connaissance !:blush:
                 
             Rejoins-nous avec ce ticket d'invitation :tickets:
-            https://discord.gg/zWbcnuG`); console.log("c'est bon"); 
+            https://discord.gg/zWbcnuG`); console.log("c'est bon") }); 
         message.delete().catch();
     }
 });
